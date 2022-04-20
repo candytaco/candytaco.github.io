@@ -1,0 +1,8 @@
+title: candytaco.gitHub.io
+description: Because of reasons
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-minimal
+
+gems:
+  - jekyll-mentions

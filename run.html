@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>Running ID Info</title>
+
+	<link rel="stylesheet" href="stylesheets/styles.css">
+	<link rel="stylesheet" href="stylesheets/github-light.css">
+	<meta name="viewport" content="width=device-width">
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<!--Look, if you're looking at this, then kudos to you - have my basic info.
+	This was not meant to be secure. 
+	It's obfuscated just enough to hide from web crawlers-->
+<script type="text/javascript">
+	function ShowInfo() 
+	{
+		var code = document.getElementById("codeText").value;
+		var div = document.getElementById("infoDiv");
+		var timeInfo = "";
+		if (code == String(Math.pow(2, 17) - 1))
+		{
+			div.innerHTML = atob("PHA+VGlhbmppYW8gWmhhbmc8L3A+DQo8cD4xMTI4IE94Zm9yZCBTdDwvcD4NCjxwPkJlcmtlbGV5IENBIDk0NzA3PC9wPg0KDQo8cD5JbnN1cmFuY2U6IEhlYWx0aE5ldCBDQTwvcD4NCjxwPk5vIGtub3duIGFsbGVyZ2llcyBvciBtZWRpY2FsIGlzc3VlczwvcD4=");
+			div.innerHTML += atob("PHA+TW9tIDkyNS0yNDctNDYxNTwvcD4NCjxwPkRhZCA5MjUtMjQ3LTQ2MTY8L3A+DQoNCjxwPkhvdXNlbWF0ZSBLcmlzdGVuIDcwNC02NTQtOTg4OTwvcD4=");
+			document.getElementById("timeRelevantInfoDiv").innerHTML += timeInfo;
+		}
+		else
+		{
+			div.innerHTML = "Incorrect Code";
+		}
+	}
+</script>
+
+<body>
+<div class="wrapper">
+	<header>
+		<h1>Running ID Info</h1>
+		<p>You are most likely are looking at this page because you found my running tag. This is not good. 
+			Enter the 6-digit code on the last line of the tag to pull up my info.</p>
+		<div id="timeRelevantInfoDiv"></div>
+	</header>
+	<section>
+		<input type="text" placeholder="Code on last line of tag" id="codeText">
+		<input type="button" value="Validate" onClick="ShowInfo()">
+		<div id="infoDiv"></div>
+	</section>
+	<footer>
+		<p>
+			<small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
+		</p>
+	</footer>
+</div>
+<script src="javascripts/scale.fix.js"></script>
+
+</body>
+</html>

@@ -61,6 +61,9 @@ hugoblox:
   typography:
     # Theme pack: name from data/fonts/
     pack: "academic"
+    families:
+      heading: "Signika"
+      body: "Signika"
 
   # ────────────────────────────────────────────────────────────────────────────
   # LAYOUT
@@ -70,9 +73,9 @@ hugoblox:
     # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
     radius: "md"
     # Spacing density: 'compact', 'comfortable', or 'spacious'
-    spacing: "spacious"
+    spacing: "compact"
     # Avatar shape in author profiles
-    avatar_shape: circle # circle | square | rounded
+    avatar_shape: square # circle | square | rounded
 
   # ────────────────────────────────────────────────────────────────────────────
   # HEADER
@@ -83,14 +86,14 @@ hugoblox:
     # Header style variant
     style: navbar # navbar | navbar-simple | minimal
     # Stick to top on scroll
-    sticky: true
+    sticky: false
     # Menu alignment
     align: center # left | center | right
     # Feature toggles
     search: true
-    theme_toggle: true
-    theme_picker: true
-    language_switcher: true
+    theme_toggle: false
+    theme_picker: false
+    language_switcher: false
     # Call-to-action button
     cta:
       enable: false
@@ -104,7 +107,7 @@ hugoblox:
   footer:
     # Footer style variant
     style: minimal # minimal | columns | centered
-    language_switcher: true
+    language_switcher: false
     # Custom footer text (HTML supported)
     text: ""
 

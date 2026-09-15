@@ -64,7 +64,10 @@ hugoblox:
     families:
       heading: "Signika"
       body: "Signika"
-      code: "Fira Code"    
+      code: "Fira Code"
+    # These fonts are bundled as variable woff2 files in assets/dist/font/ (Signika.var.woff2,
+    # FiraCode.var.woff2). The theme serves them from there instead of requesting them from
+    # Google Fonts, whose URL it builds with a weight range these fonts do not support.
 
   # ────────────────────────────────────────────────────────────────────────────
   # LAYOUT

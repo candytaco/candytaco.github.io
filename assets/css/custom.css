@@ -1,0 +1,4 @@
+/* Homepage biography block: the theme hard codes the name heading as font-black (900). */
+.resume-biography h1 {
+  font-weight: 400;
+}

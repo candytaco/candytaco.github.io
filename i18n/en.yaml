@@ -1,2 +1,4 @@
 - id: btn_doi
   translation: Link to article
+- id: btn_code
+  translation: Github repo

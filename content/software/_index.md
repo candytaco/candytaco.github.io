@@ -1,5 +1,5 @@
 ---
-title: 'Projects'
+title: 'Software'
 date: 2024-05-19
 type: landing
 
@@ -7,11 +7,11 @@ type: landing
 sections:
   - block: collection
     content:
-      title: Selected Projects
+      title: Software
       text: ""
       filters:
         folders:
-          - projects
+          - software
     design:
       view: article-grid
       fill_image: false

@@ -38,9 +38,9 @@ summary: >-
 
 featured: true
 
-hugoblox:
-  ids:
-    doi: 10.64898/2025.12.16.694742
+links:
+  - type: doi
+    url: https://doi.org/10.64898/2025.12.16.694742
 ---
 
   The first quantitative map of the cortical regions that are engages as people actively navigate.

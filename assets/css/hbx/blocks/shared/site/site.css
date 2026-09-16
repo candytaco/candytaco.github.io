@@ -152,6 +152,11 @@
 .hbb-section [role="article"] > .p-8 {
   padding: 1rem;
 }
+/* Cards hard-code hover:-translate-y-2, which lifts them on hover. The shadow classes beside it stay,
+   so the glow remains. */
+.hbb-section [role="article"]:hover {
+	translate: none;
+}
 .hbb-section [role="article"] .space-y-4 > :not(:last-child) {
   margin-block-end: 0.5rem;
 }

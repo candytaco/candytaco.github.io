@@ -32,13 +32,8 @@ summary: Visual-semantic representations in the human cortex differs between tas
 
 featured: true
 
-hugoblox:
-  ids:
-    doi: 10.1523/ENEURO.0183-26.2026
 
 links:
-  - type: pdf
-    url: https://www.eneuro.org/content/eneuro/13/9/ENEURO.0183-26.2026.full.pdf
-  - type: preprint
-    url: https://doi.org/10.64898/2026.02.19.706797
+  - type: doi
+    url: https://doi.org/10.1523/ENEURO.0183-26.2026
 ---

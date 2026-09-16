@@ -43,7 +43,7 @@ abstract: >-
 # Display this page in the Featured widget?
 featured: true
 
-hugoblox:
-  ids:
-    doi: 10.64898/2026.09.02.749001
+links:
+  - type: doi
+    url: https://doi.org/10.64898/2026.09.02.749001
 ---

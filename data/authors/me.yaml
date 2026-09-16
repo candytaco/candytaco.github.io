@@ -21,8 +21,6 @@ bio: |
 affiliations:
   - name: Gallant Lab, Department of Neuroscience, University of California, Berkeley
     url: https://gallantlab.org
+  - name: t.zhang [at] berkeley.edu
 
-links:
-  - icon: at-symbol
-    url: mailto:t.zhang@berkeley.edu
-    label: E-mail Me
+links: []

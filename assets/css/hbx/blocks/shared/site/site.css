@@ -9,6 +9,20 @@
    "blox-_" on this Hugo/theme combination) and hook the theme's own inner classes or
    the design.css_class values set in the content front matter (e.g. cv-block). */
 
+/* ---- Top navigation bar --------------------------------------------------------- */
+
+/* The header hard-codes py-3 and each link lg:py-3, stacking to 1.5rem above and below the text. */
+#site-header.header {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+@media (min-width: 1024px) {
+	.nav-link {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
 /* ---- Homepage biography block ------------------------------------------------- */
 
 /* The theme hard-codes the name heading as font-black (900). */
@@ -28,7 +42,17 @@
   padding-bottom: 1rem;
 }
 .resume-biography .mb-12 {
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+/* Name, role and affiliation lines are stacked with space-y-3. */
+.resume-biography .space-y-3 > :not(:last-child) {
+	margin-block-end: 0.25rem;
+}
+
+/* The two-column grid hard-codes items-start. */
+.resume-biography .grid.items-start {
+	align-items: center;
 }
 .resume-biography .mb-8 {
   margin-bottom: 0.5rem;
@@ -67,6 +91,10 @@
 .hbb-section .container.px-8 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+/* The grid wrapper hard-codes max-w-screen-lg (64rem). */
+.hbb-section .container.max-w-screen-lg {
+	max-width: none;
 }
 .hbb-section .grid.gap-10 {
   gap: 1rem;
@@ -117,10 +145,33 @@
 
 /* ---- Single pages (publications, software, research) --------------------------- */
 
+/* The page row is capped at max-w-screen-xl (80rem). From xl up it holds a 16rem empty sidebar pad on
+   the left and a 16rem table-of-contents column on the right; main is capped at max-w-6xl, the
+   abstract grid at max-w-prose, and the body at the typography plugin's 65ch prose width. */
+.mx-auto.flex.max-w-screen-xl,
+main.max-w-6xl,
+main .max-w-prose,
+main .prose {
+	max-width: none;
+}
+@media (min-width: 80rem) {
+	aside.hb-sidebar-container {
+		display: none;
+	}
+}
+nav.hb-toc:not(:has(li)) {
+	display: none;
+}
+
 main .mt-4.mb-16 {
   margin-bottom: 1rem;
 }
 main .max-w-prose.grid.my-6 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+	gap: 0.5rem;
+}
+/* last-edited.html emits an empty mt-16 spacer when the updated date is not shown. */
+main .prose + .mt-16 {
+	margin-top: 0;
 }

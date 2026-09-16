@@ -92,6 +92,8 @@ hugoblox:
     enable: true
     # Header style variant
     style: navbar # navbar | navbar-simple | minimal
+    # Show the site name in the header
+    show_title: false
     # Stick to top on scroll
     sticky: false
     # Menu alignment

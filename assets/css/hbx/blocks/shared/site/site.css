@@ -1,83 +1,89 @@
 /* Project CSS.
    The theme's layouts/_partials/css.html concatenates every file matching
-   assets/css/hbx/blocks/shared/**/*.css into its Tailwind entry, so rules here are
-   plain (unlayered) CSS and take precedence over Tailwind utility classes.
-   assets/css/custom.css is NOT loaded by this theme version. */
+   assets/css/hbx/blocks/shared/** /*.css into its Tailwind entry (the ** needs a real
+   subdirectory, hence the site/ folder), so rules here are plain (unlayered) CSS and
+   take precedence over Tailwind utility classes. assets/css/custom.css is NOT loaded by
+   this theme version.
 
-/* Homepage biography: the theme hard-codes the name heading as font-black (900). */
-.blox-resume-biography-3 h1 {
+   Selectors deliberately avoid the theme's per-block class (it renders as the broken
+   "blox-_" on this Hugo/theme combination) and hook the theme's own inner classes or
+   the design.css_class values set in the content front matter (e.g. cv-block). */
+
+/* ---- Homepage biography block ------------------------------------------------- */
+
+/* The theme hard-codes the name heading as font-black (900). */
+.resume-biography h1 {
   font-weight: 400;
 }
 
-/* Homepage biography: hide the "Professional Summary" heading row (icon + h2) above the bio text.
+/* Hide the "Professional Summary" heading row (icon + h2) above the bio text.
    Education and Interests use h3, so only the bio heading matches. */
-.blox-resume-biography-3 .mb-12 > .flex.items-center.gap-4.mb-8:has(h2) {
+.resume-biography .mb-12 > .flex.items-center.gap-4.mb-8:has(h2) {
   display: none;
 }
 
-/* CV page (blocks carry design.css_class: cv-block): full-width content at body text size,
-   matching the Selected Publications citation list. */
-.cv-block .max-w-prose,
-.cv-block .max-w-3xl {
-  max-width: none;
-  width: 100%;
+/* The wrapper hard-codes py-8 sm:py-12 md:py-16 lg:py-24 xl:py-32. */
+.resume-biography {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-.cv-block .prose {
-  font-size: 1rem;
-  line-height: 1.75;
+.resume-biography .mb-12 {
+  margin-bottom: 1rem;
+}
+.resume-biography .mb-8 {
+  margin-bottom: 0.5rem;
+}
+.resume-biography .gap-6 {
+  gap: 1rem;
 }
 
-/* ---- Compact layout ----------------------------------------------------------
-   params.yaml layout.spacing: "compact" only shrinks the section padding token
-   (--hb-spacing-section, 6rem -> 2.5rem). The rules below tighten the spacing that
-   blocks and page templates hard-code with Tailwind classes. */
+/* ---- Every landing-page section ---------------------------------------------- */
 
-/* Section padding */
+/* params.yaml layout.spacing: "compact" only sets --hb-spacing-section (2.5rem). */
 .hbb-section {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-/* Block titles (markdown + collection blocks) */
-.blox-markdown .text-3xl,
-.blox-content-collection .text-3xl {
+/* Block titles (markdown + collection blocks render <div class="mb-6 text-3xl font-bold">) */
+.hbb-section .mb-6.text-3xl {
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 0.5rem;
 }
-.blox-markdown .gap-3,
-.blox-content-collection .gap-3 {
+.hbb-section .flex.flex-col.items-center.gap-3 {
   gap: 0.25rem;
 }
 
-/* Citation lists: no large top gap, tighter items */
-.blox-content-collection .container.max-w-3xl {
-  margin-top: 0.5rem;
+/* Citation lists: the list wrapper hard-codes mt-16 sm:mt-20; items have 1rem inline margin. */
+.hbb-section .container.max-w-3xl {
+  margin-top: 0.25rem;
 }
 .view-citation {
-  margin-bottom: 0.4rem !important; /* theme sets 1rem inline */
+  margin-bottom: 0.4rem !important;
 }
 
 /* Card grids (featured publications, research, software) */
-.blox-content-collection .container.px-8 {
+.hbb-section .container.px-8 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.blox-content-collection .grid {
+.hbb-section .grid.gap-10 {
   gap: 1rem;
 }
-.blox-content-collection [role="article"] > .p-8 {
+.hbb-section [role="article"] > .p-8 {
   padding: 1rem;
 }
-.blox-content-collection [role="article"] .space-y-4 > :not(:last-child) {
+.hbb-section [role="article"] .space-y-4 > :not(:last-child) {
   margin-block-end: 0.5rem;
 }
-/* Cards without a featured image: drop the 16:9 gradient placeholder */
-.blox-content-collection [role="article"] > .aspect-\[16\/9\]:not(:has(img)) {
+/* Cards without a featured image: drop the 16:9 gradient placeholder. */
+.hbb-section [role="article"] > .aspect-\[16\/9\]:not(:has(img)) {
   display: none;
 }
 
-/* Prose (Tailwind typography): body size everywhere, tighter paragraphs and lists */
+/* ---- Prose (Tailwind typography) everywhere ------------------------------------- */
+
 .prose {
   font-size: 1rem;
   line-height: 1.6;
@@ -100,22 +106,17 @@
   margin-bottom: 0.25em;
 }
 
-/* Homepage biography block: the wrapper hard-codes py-8 ... xl:py-32 */
-.blox-resume-biography-3 .resume-biography {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-.blox-resume-biography-3 .mb-12 {
-  margin-bottom: 1.25rem;
-}
-.blox-resume-biography-3 .mb-8 {
-  margin-bottom: 0.5rem;
-}
-.blox-resume-biography-3 .gap-6 {
-  gap: 1rem;
+/* ---- CV page (blocks carry design.css_class: cv-block) -------------------------- */
+
+/* Full-width content, matching the Selected Publications citation list. */
+.cv-block .max-w-prose,
+.cv-block .max-w-3xl {
+  max-width: none;
+  width: 100%;
 }
 
-/* Single pages: header meta wrapper and publication metadata grid */
+/* ---- Single pages (publications, software, research) --------------------------- */
+
 main .mt-4.mb-16 {
   margin-bottom: 1rem;
 }

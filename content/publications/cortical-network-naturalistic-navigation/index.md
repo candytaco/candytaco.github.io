@@ -16,7 +16,7 @@ publication_types: ["article"]
 
 # Publication metadata — structured fields used by citation styles and BibTeX export.
 publication:
-  name: "bioRxiv"
+  name: "bioRxiv, accepted at Nature Neuroscience"
 
 abstract: >-
   Navigation-related information is known to be represented broadly across the human cerebral cortex,
@@ -31,8 +31,8 @@ abstract: >-
 
 # Summary. An optional shortened abstract.
 summary: >-
-  This paper provides the first quantitative map of the cortical regions that are engages as people actively navigate.
-  Results show that active navigation engages multiple regions across the visual, parietal, and prefrontal cortices.
+  The first quantitative map of the cortical regions that are engaged as people actively navigate.
+  Active navigation engages multiple regions across the visual, parietal, and prefrontal cortices.
   Representations are distributed, and each region represents a complex mixture of navigation-related infromation.
 
 
@@ -43,4 +43,6 @@ hugoblox:
     doi: 10.64898/2025.12.16.694742
 ---
 
-Accepted at Nature Neuroscience.
+  The first quantitative map of the cortical regions that are engages as people actively navigate.
+  Active navigation engages multiple regions across the visual, parietal, and prefrontal cortices.
+  Representations are distributed, and each region represents a complex mixture of navigation-related infromation.

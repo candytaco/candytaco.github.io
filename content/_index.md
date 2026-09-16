@@ -14,7 +14,7 @@ sections:
         I use dynamic neuroimaging experiments and use advanced computational methods to understand the cognitive and neural basis of complex, naturalistic human behavior. 
 
 
-        My work has focused on using fMRI and high-dimensional models to map the functional network in the human cerebral cortex that mediates active spatial navigation.
+        My research focuses on spatial navigation, collaborative problem solving, and dynamic multiagent interactions.
 
 
         Real-world experiences emerge out of a continuous perception-cognition-action loop that cannot be captured by classical experimental paradigms.

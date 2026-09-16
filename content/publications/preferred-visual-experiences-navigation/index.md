@@ -31,10 +31,6 @@ publication:
 peer_reviewed: false
 open_access: true
 
-tags:
-  - fMRI
-  - Navigation
-  - Encoding models
 
 # Display this page in the Featured widget?
 featured: true

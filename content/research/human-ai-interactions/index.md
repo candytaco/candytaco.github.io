@@ -3,8 +3,6 @@ title: "Human-AI Interactions"
 date: 2026-09-15
 summary: "Human-AI Interactions in embodied interactive environments."
 weight: 4
-tags:
-  - Brain-AI alignment
 ---
 
 AI systems are increasingly deployed in the real world as embodied agents. 

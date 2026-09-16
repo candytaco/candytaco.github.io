@@ -35,11 +35,6 @@ summary: >-
   Results show that active navigation engages multiple regions across the visual, parietal, and prefrontal cortices.
   Representations are distributed, and each region represents a complex mixture of navigation-related infromation.
 
-tags:
-- fMRI
-- Navigation
-- Encoding models
-- Cortical networks
 
 featured: true
 

@@ -3,9 +3,6 @@ title: "Spatial Navigation"
 date: 2026-09-15
 summary: "Understanding how the human brain moves through the world"
 weight: 1
-tags:
-  - Navigation
-  - fMRI
 ---
 
 Spatial navigation is a fundamental component of everyday life. How do we know where we are? Where are we going? How do we get there? 

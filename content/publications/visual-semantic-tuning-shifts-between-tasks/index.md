@@ -30,11 +30,6 @@ abstract: Attention is known to shift neural tuning toward attended targets with
 summary: Visual-semantic representations in the human cortex differs between tasks, demonstrating that the brain reconfigures its tuning accoring to task demands.
   These results highlight the importance of ecologically valid experiments that engage the brain as does the real world.
 
-tags:
-- fMRI
-- Encoding models
-- Visual semantics
-- Navigation
 featured: true
 
 hugoblox:

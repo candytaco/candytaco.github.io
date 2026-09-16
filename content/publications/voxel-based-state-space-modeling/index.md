@@ -26,11 +26,6 @@ abstract: Human neuroimaging has largely focused on static representations, yet 
 # Summary. An optional shortened abstract.
 summary: A voxel-based state space modeling method that recovers low-dimensional, task-related cognitive state spaces from human fMRI data recorded during a visual attention task and a video game task.
 
-tags:
-- fMRI
-- State space modeling
-- Attention
-- Naturalistic tasks
 featured: false
 
 hugoblox:

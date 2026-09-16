@@ -4,10 +4,6 @@ date: 2026-03-23
 links:
   - type: code
     url: https://github.com/gallantlab/its-complicated
-tags:
-  - Unreal Engine
-  - fMRI
-  - Experiment design
 ---
 
 It's Complicated is a guide and infrastructure for architecting interactive fMRI experiments in Unreal Engine. 

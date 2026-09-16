@@ -3,9 +3,6 @@ title: 'CV'
 date: 2026-09-15
 type: landing
 
-design:
-  spacing: '5rem'
-
 sections:
   - block: markdown
     content:
@@ -14,6 +11,7 @@ sections:
         - **2021 - Present:** Postdoctoral Scholar, Gallant Lab, Department of Neuroscience, University of California, Berkeley
         - **2026 - Present:** Visiting Researcher, Okinawa Institute of Science and Technology
     design:
+      css_class: cv-block
       columns: '1'
   - block: markdown
     content:
@@ -22,6 +20,7 @@ sections:
         - **2021:** Ph.D., Bioengineering, University of California, Berkeley. Advisor: Dr. Jack Gallant. Dissertation: *Modeling navigation representations during naturalistic driving*.
         - **2015:** B.S., Biomedical Engineering, University of Alabama at Birmingham. Minors in Computer Science, Chemistry, Mathematics, and Biology. Summa cum laude.
     design:
+      css_class: cv-block
       columns: '1'
   - block: collection
     content:
@@ -31,6 +30,7 @@ sections:
         folders:
           - publications
     design:
+      css_class: cv-block
       view: citation
   - block: markdown
     content:
@@ -43,6 +43,7 @@ sections:
         - Zhang T, Godara P, Blanco E, Griffin R, Wang X, Curcio CA, & Zhang Y (2015). *Variability in Human Cone Topography Assessed by Adaptive Optics Scanning Laser Ophthalmoscopy.* American Journal of Ophthalmology. [doi:10.1016/j.ajo.2015.04.034](https://doi.org/10.1016/j.ajo.2015.04.034)
         - Ach T, Huisingh C, McGwin G Jr, Messinger JD, Zhang T, Bentley MJ, Gutierrez DB, Ablonczy Z, Smith RT, Sloan KR, & Curcio CA (2014). *Quantitative autofluorescence and cell density maps of the human retinal pigment epithelium.* Investigative Ophthalmology & Visual Science. [doi:10.1167/iovs.14-14802](https://doi.org/10.1167/iovs.14-14802)
     design:
+      css_class: cv-block
       columns: '1'
   - block: markdown
     content:
@@ -54,6 +55,7 @@ sections:
         - Park J, Zhang T, Kim R, Gallant JL, & Shim W. *Cortical tuning reconfigures to prioritize behaviorally relevant representations across changing goals.*
         - Park J, Camassa A, Zhang T, Wei Z, Guidera J, Tseng S, Siddhant I, Wang Z, Natsukawa H, Takahashi K, Rungratsameetaweemana N, Mu Y, Smirnov S, Frank LM, Ahrens MB, Sejnowski TJ, Gallant JL, & Pao GM. *Mapping neural activity to behavior with manifold dimensional expansion.*
     design:
+      css_class: cv-block
       columns: '1'
   - block: markdown
     content:
@@ -63,6 +65,7 @@ sections:
         - Zhang T. *Driving in the scanner: findings from an active navigation experiment.* Vision Brunch talks, Department of Psychology, Stanford University. October 2022.
         - Zhang T. *Modelling navigational representations in the human brain.* Institute for Neuroscience Early Career talk series, University of Nevada, Reno. September 2021.
     design:
+      css_class: cv-block
       columns: '1'
   - block: markdown
     content:
@@ -77,6 +80,7 @@ sections:
         - Zhang T. *Driving in the scanner: Using fMRI to map brain representations during active navigation.* Vision Science Oxyopia seminar series, University of California, Berkeley. October 2023.
         - Zhang T. *Using human brain data to improve navigation in autonomous systems: Insights into the functional brain networks underlying naturalistic human navigation.* Office of Naval Research Science of Autonomy Program Review. August 2023.
     design:
+      css_class: cv-block
       columns: '1'
   - block: markdown
     content:
@@ -100,6 +104,7 @@ sections:
         - Zhang T & Gallant JL. (2019) *A naturalistic navigation task reveals rich distributed representations of information across the human cerebral cortex.* Society for Neuroscience Annual Meeting, Chicago, IL.
         - Zhang T, Gao JS, & Gallant JL. (2016) *Supervised and blind voxel-based state space methods recover task-related states from fMRI responses.* Society for Neuroscience Annual Meeting, San Diego, CA.
     design:
+      css_class: cv-block
       columns: '1'
   - block: markdown
     content:
@@ -107,6 +112,7 @@ sections:
       text: |-
         - Zhang T, Gao JS, Cukur T, & Gallant JL (2020). *Whole-brain BOLD activity recorded by fMRI during a visual attention task and a video game task.* CRCNS.org. [doi:10.6080/K0668BDF](https://doi.org/10.6080/K0668BDF)
     design:
+      css_class: cv-block
       columns: '1'
   - block: markdown
     content:
@@ -118,6 +124,7 @@ sections:
         - **Aug 2011 - May 2015:** UAB Presidential Scholarship (full tuition)
         - **Aug 2011 - May 2015:** Francis J Dupuis Engineering Scholarship
     design:
+      css_class: cv-block
       columns: '1'
   - block: collection
     content:
@@ -126,6 +133,7 @@ sections:
         folders:
           - software
     design:
+      css_class: cv-block
       view: article-grid
       columns: 2
       show_date: false
@@ -138,6 +146,7 @@ sections:
         - **Programming Languages:** Python, C, C++, C#, Matlab
         - **Tools & Environments:** Unreal Engine, git
     design:
+      css_class: cv-block
       columns: '1'
   - block: markdown
     content:
@@ -149,5 +158,6 @@ sections:
         - **Fall 2019:** Cognitive Neuroscience, Graduate Student Instructor. Psych 127 (Undergraduate level). Course taught by Dr. Jack Gallant.
         - **Fall 2016:** Teaching Techniques for Bioengineering, Reader. BioE 301 (Graduate level). Course taught by Prof. Terry Johnson.
     design:
+      css_class: cv-block
       columns: '1'
 ---

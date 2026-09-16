@@ -3,9 +3,6 @@ title: "Naturalistic Neuroimaging Methods"
 date: 2026-09-15
 summary: "Building the infrastructure for naturalistic neuroimaging experiments that engage the full perception-cognition-action loop"
 weight: 2
-tags:
-  - fMRI
-  - Unreal Engine
 ---
 
 Real-world experience emerges out of a continuous perception-cognition-action loop. 

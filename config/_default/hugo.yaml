@@ -23,6 +23,18 @@ removePathAccents: true
 
 build:
   writeStats: true
+# Applied to every page: hide date / last-updated / reading time in page headers,
+# the share buttons, and the author profile card in page footers.
+cascade:
+  - _target:
+      path: /**
+    params:
+      show_date: false
+      show_date_updated: false
+      reading_time: false
+      share: false
+      profile: false
+
 enableGitInfo: false
 summaryLength: 30
 pagination:

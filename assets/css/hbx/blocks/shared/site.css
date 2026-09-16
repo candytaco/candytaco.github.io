@@ -1,0 +1,125 @@
+/* Project CSS.
+   The theme's layouts/_partials/css.html concatenates every file matching
+   assets/css/hbx/blocks/shared/**/*.css into its Tailwind entry, so rules here are
+   plain (unlayered) CSS and take precedence over Tailwind utility classes.
+   assets/css/custom.css is NOT loaded by this theme version. */
+
+/* Homepage biography: the theme hard-codes the name heading as font-black (900). */
+.blox-resume-biography-3 h1 {
+  font-weight: 400;
+}
+
+/* Homepage biography: hide the "Professional Summary" heading row (icon + h2) above the bio text.
+   Education and Interests use h3, so only the bio heading matches. */
+.blox-resume-biography-3 .mb-12 > .flex.items-center.gap-4.mb-8:has(h2) {
+  display: none;
+}
+
+/* CV page (blocks carry design.css_class: cv-block): full-width content at body text size,
+   matching the Selected Publications citation list. */
+.cv-block .max-w-prose,
+.cv-block .max-w-3xl {
+  max-width: none;
+  width: 100%;
+}
+.cv-block .prose {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* ---- Compact layout ----------------------------------------------------------
+   params.yaml layout.spacing: "compact" only shrinks the section padding token
+   (--hb-spacing-section, 6rem -> 2.5rem). The rules below tighten the spacing that
+   blocks and page templates hard-code with Tailwind classes. */
+
+/* Section padding */
+.hbb-section {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Block titles (markdown + collection blocks) */
+.blox-markdown .text-3xl,
+.blox-content-collection .text-3xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+.blox-markdown .gap-3,
+.blox-content-collection .gap-3 {
+  gap: 0.25rem;
+}
+
+/* Citation lists: no large top gap, tighter items */
+.blox-content-collection .container.max-w-3xl {
+  margin-top: 0.5rem;
+}
+.view-citation {
+  margin-bottom: 0.4rem !important; /* theme sets 1rem inline */
+}
+
+/* Card grids (featured publications, research, software) */
+.blox-content-collection .container.px-8 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.blox-content-collection .grid {
+  gap: 1rem;
+}
+.blox-content-collection [role="article"] > .p-8 {
+  padding: 1rem;
+}
+.blox-content-collection [role="article"] .space-y-4 > :not(:last-child) {
+  margin-block-end: 0.5rem;
+}
+/* Cards without a featured image: drop the 16:9 gradient placeholder */
+.blox-content-collection [role="article"] > .aspect-\[16\/9\]:not(:has(img)) {
+  display: none;
+}
+
+/* Prose (Tailwind typography): body size everywhere, tighter paragraphs and lists */
+.prose {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.prose p,
+.prose ul,
+.prose ol {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.prose li {
+  margin-top: 0.125em;
+  margin-bottom: 0.125em;
+}
+.prose ul ul,
+.prose ul ol,
+.prose ol ul,
+.prose ol ol {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+/* Homepage biography block: the wrapper hard-codes py-8 ... xl:py-32 */
+.blox-resume-biography-3 .resume-biography {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.blox-resume-biography-3 .mb-12 {
+  margin-bottom: 1.25rem;
+}
+.blox-resume-biography-3 .mb-8 {
+  margin-bottom: 0.5rem;
+}
+.blox-resume-biography-3 .gap-6 {
+  gap: 1rem;
+}
+
+/* Single pages: header meta wrapper and publication metadata grid */
+main .mt-4.mb-16 {
+  margin-bottom: 1rem;
+}
+main .max-w-prose.grid.my-6 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}

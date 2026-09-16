@@ -78,9 +78,9 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   layout:
     # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
-    radius: "md"
+    radius: "none"
     # Spacing density: 'compact', 'comfortable', or 'spacious'
-    spacing: "compact"
+    spacing: compact
     # Avatar shape in author profiles
     avatar_shape: square # circle | square | rounded
 
@@ -152,9 +152,9 @@ hugoblox:
       phone: ""
     # AI/LLM crawler guidance (llms.txt)
     ai:
-      allow:
+      allow: []
+      disallow:
         - /
-      disallow: []
       note: "Guidance for AI crawlers - customize to match your public content."
       contact: ""
 
@@ -168,10 +168,10 @@ hugoblox:
       enable: false
     # Table of contents
     toc:
-      enable: true
+      enable: false
     # Reading time estimates
     reading_time:
-      enable: true
+      enable: false
     # Academic citations
     citations:
       style: apa # apa | mla | chicago | ieee
@@ -181,7 +181,7 @@ hugoblox:
   # Site search
   # ────────────────────────────────────────────────────────────────────────────
   search:
-    enable: true
+    enable: flase
     # Trending/suggested search terms
     suggestions: []
     # Quick action shortcuts in search modal

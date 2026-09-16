@@ -49,7 +49,10 @@ sections:
         featured_only: true
     design:
       view: article-grid
-      columns: 2
+      columns: 4
+      show_date: false
+      show_read_time: false
+      show_read_more: false
   - block: collection
     content:
       title: Recent Publications

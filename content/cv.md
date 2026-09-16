@@ -152,3 +152,4 @@ sections:
         - **Fall 2016:** Teaching Techniques for Bioengineering, Reader. BioE 301 (Graduate level). Course taught by Prof. Terry Johnson.
     design:
       columns: '1'
+---

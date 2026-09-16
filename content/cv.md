@@ -119,8 +119,6 @@ sections:
         - **Aug 2011 - May 2015:** Francis J Dupuis Engineering Scholarship
     design:
       columns: '1'
-    design:
-      columns: '1'
   - block: collection
     content:
       title: Software
@@ -152,3 +150,4 @@ sections:
         - **Fall 2016:** Teaching Techniques for Bioengineering, Reader. BioE 301 (Graduate level). Course taught by Prof. Terry Johnson.
     design:
       columns: '1'
+---

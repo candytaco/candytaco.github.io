@@ -19,6 +19,28 @@
 	border-radius: 0 !important;
 }
 
+/* ---- Letter spacing --------------------------------------------------------------- */
+
+/* The modern font pack sets -0.02em on every heading, and the Tailwind tracking-tight class adds
+   -0.025em on page, card and section titles. */
+:root {
+	--hb-font-tracking-heading: 0;
+}
+.tracking-tight {
+	letter-spacing: 0;
+}
+
+/* ---- Font weight ------------------------------------------------------------------ */
+
+/* The theme's heading weight token is 700, and the Tailwind font-bold class requests 700 on card
+   titles, metadata labels and page titles. */
+:root {
+	--hb-font-weight-heading: 400;
+}
+.font-bold {
+	font-weight: 400;
+}
+
 /* ---- Top navigation bar --------------------------------------------------------- */
 
 /* The header hard-codes py-3 and each link lg:py-3, stacking to 1.5rem above and below the text. */
@@ -31,6 +53,13 @@
 		padding-top: 0;
 		padding-bottom: 0;
 	}
+}
+
+/* The theme applies font-semibold to nav links and the brand. */
+.nav-link,
+.navbar-brand,
+.nav-dropdown-link {
+	font-weight: 300;
 }
 
 /* ---- Homepage biography block ------------------------------------------------- */
@@ -57,7 +86,10 @@
 
 /* Name, role and affiliation lines are stacked with space-y-3. */
 .resume-biography .space-y-3 > :not(:last-child) {
-	margin-block-end: 0.25rem;
+	margin-block-end: 0;
+}
+.resume-biography .space-y-3 > * {
+	line-height: 1.2;
 }
 
 /* The two-column grid hard-codes items-start and fills the max-w-7xl container, which puts the photo
@@ -91,6 +123,7 @@
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 0.5rem;
+	font-weight: 300;
 }
 .hbb-section .flex.flex-col.items-center.gap-3 {
   gap: 0.25rem;
@@ -149,6 +182,19 @@
 .prose ol ol {
   margin-top: 0.25em;
   margin-bottom: 0.25em;
+}
+
+/* ---- Vibrating cat page ---------------------------------------------------------- */
+
+/* Tailwind's base styles set images to display: block, so text-align cannot centre them. The image
+   render hook also wraps the image in a full-width div, which defeats its own flex centring. */
+.vibrating-cat img {
+	margin-left: auto;
+	margin-right: auto;
+}
+.vibrating-cat figure {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 /* ---- CV page (blocks carry design.css_class: cv-block) -------------------------- */

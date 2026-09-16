@@ -62,12 +62,12 @@ hugoblox:
     # Theme pack: name from data/fonts/
     pack: "modern"
     families:
-      heading: "Signika"
+      heading: "Rubik"
       body: "Signika"
       code: "Fira Code"    
     weights:
-      heading: [300, 500, 600, 700]
-      body: [400, 600]
+      heading: [300;400]
+      body: [300]
     variable:
       heading: false
       body: false

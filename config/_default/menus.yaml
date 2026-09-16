@@ -17,3 +17,8 @@ main:
   - name: CV
     url: cv/
     weight: 40
+
+footer:
+  - name: Vibrating Cat
+    url: /vibrating-cat/
+    weight: 10

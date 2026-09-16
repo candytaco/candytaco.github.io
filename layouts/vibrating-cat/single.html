@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{/* Centered page holding only the title and the gif. */}}
+<main class="w-full px-6 pt-4 text-center">
+	<h1 class="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">{{ .Title }}</h1>
+	<div class="vibrating-cat prose prose-slate dark:prose-invert mx-auto mt-2">
+		{{ .Content }}
+	</div>
+</main>
+{{ end }}

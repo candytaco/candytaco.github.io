@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{/* Publication page: title, date and authors, link buttons (PDF, preprint, DOI), abstract, then the
+     page body for descriptions and images. Overrides the theme's layouts/single.html for this type. */}}
+<article class="w-full break-words pb-8">
+	<main class="w-full min-w-0 px-6 pt-4 md:px-12">
+
+		<h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100" data-pagefind-meta="title" data-pagefind-body>{{ .Title }}</h1>
+
+		<div class="mt-4 text-gray-500 dark:text-gray-300 text-sm">
+			{{ if .Params.authors }}{{ partial "page_metadata_authors" .}}{{ end }}
+			{{ with .Date }} | <span>{{ .Year}}</span>{{ end }}
+			{{ with .Params.publication.name }} | <span>{{ .}}</span>{{ end }}
+		</div>
+
+		<div class="mt-3">
+			{{ partial "page_links_div.html" . }}
+		</div>
+
+		{{ with .Params.abstract }}
+		<div class="max-w-prose grid grid-cols-1 md:grid-cols-[200px_auto] gap-4 my-6">
+			<div class="font-bold text-2xl">{{ i18n "abstract" }}</div>
+			<div>{{ . | markdownify }}</div>
+		</div>
+		{{ end }}
+
+		{{/* Descriptions and images come from the markdown body below the front matter in index.md. */}}
+		<div class="prose prose-slate lg:prose-xl dark:prose-invert" data-pagefind-body>
+			{{ .Content }}
+		</div>
+
+	</main>
+</article>
+{{ end }}

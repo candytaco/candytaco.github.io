@@ -63,5 +63,10 @@ markup:
     lineNos: false
 security:
   _merge: deep
+  exec:
+    allow:
+    - go
+    - tailwindcss
+    - node
 sitemap:
   _merge: deep

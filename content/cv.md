@@ -22,26 +22,20 @@ sections:
     design:
       css_class: cv-block
       columns: '1'
-  - block: collection
-    content:
-      title: Selected Publications
-      count: 0
-      filters:
-        folders:
-          - publications
-    design:
-      css_class: cv-block
-      view: citation
   - block: markdown
     content:
-      title: Additional Publications
+      title: Publications
       text: |-
-        - Tomlin N, Zhou N, Fleisig E, Chen L, Wright T, Vinh L, Ma LX, Eisape S, French E, Du T, Zhang T, Koller A, & Suhr A (2025). *Characterizing Language Use in a Collaborative Situated Game.* arXiv:2512.03381. [doi:10.48550/arXiv.2512.03381](https://doi.org/10.48550/arXiv.2512.03381)
-        - Strong C, Stocking K, Li J, Zhang T, Gallant J, & Tomlin C (2024). *A framework for evaluating human driver models using neuroimaging.* 6th Annual Learning for Dynamics & Control Conference, PMLR 242, pp. 1565-1578. [PDF](https://proceedings.mlr.press/v242/strong24b/strong24b.pdf)
-        - Nunez-Elizalde AO, Gao JS, Zhang T, & Gallant JL (2018). *cottoncandy: scientific python package for easy cloud storage.* The Journal of Open Source Software. [doi:10.21105/joss.00890](https://doi.org/10.21105/joss.00890)
-        - Yu Y, Zhang T, Meadway A, Wang X, & Zhang Y (2015). *High-speed adaptive optics for imaging of the living human eye.* Optics Express. [doi:10.1364/OE.23.023035](https://doi.org/10.1364/OE.23.023035)
-        - Zhang T, Godara P, Blanco E, Griffin R, Wang X, Curcio CA, & Zhang Y (2015). *Variability in Human Cone Topography Assessed by Adaptive Optics Scanning Laser Ophthalmoscopy.* American Journal of Ophthalmology. [doi:10.1016/j.ajo.2015.04.034](https://doi.org/10.1016/j.ajo.2015.04.034)
-        - Ach T, Huisingh C, McGwin G Jr, Messinger JD, Zhang T, Bentley MJ, Gutierrez DB, Ablonczy Z, Smith RT, Sloan KR, & Curcio CA (2014). *Quantitative autofluorescence and cell density maps of the human retinal pigment epithelium.* Investigative Ophthalmology & Visual Science. [doi:10.1167/iovs.14-14802](https://doi.org/10.1167/iovs.14-14802)
+        - **Zhang T**, Cho CJ, & Gallant JL (2026). *Reconstructing dynamic preferred visual experiences during naturalistic navigation.* bioRxiv. [doi:10.64898/2026.09.02.749001](https://doi.org/10.64898/2026.09.02.749001)
+        - **Zhang T** & Gallant JL (2026). *Visual-semantic tuning across the cortex shifts between tasks.* eNeuro, 13(9), ENEURO.0183-26.2026. [doi:10.1523/ENEURO.0183-26.2026](https://doi.org/10.1523/ENEURO.0183-26.2026)
+        - **Zhang T**, Meschke EX, & Gallant JL (2025). *A map of the cortical functional network mediating naturalistic navigation.* bioRxiv. [doi:10.64898/2025.12.16.694742](https://doi.org/10.64898/2025.12.16.694742)
+        - Tomlin N, Zhou N, Fleisig E, Chen L, Wright T, Vinh L, Ma LX, Eisape S, French E, Du T, **Zhang T**, Koller A, & Suhr A (2025). *Characterizing Language Use in a Collaborative Situated Game.* arXiv:2512.03381. [doi:10.48550/arXiv.2512.03381](https://doi.org/10.48550/arXiv.2512.03381)
+        - Strong C, Stocking K, Li J, **Zhang T**, Gallant J, & Tomlin C (2024). *A framework for evaluating human driver models using neuroimaging.* 6th Annual Learning for Dynamics & Control Conference, PMLR 242, pp. 1565-1578. [PDF](https://proceedings.mlr.press/v242/strong24b/strong24b.pdf)
+        - **Zhang T**, Gao JS, Çukur T, & Gallant JL (2021). *Voxel-based state space modeling recovers task-related cognitive states in naturalistic fMRI experiments.* Frontiers in Neuroscience, 14, 565976. [doi:10.3389/fnins.2020.565976](https://doi.org/10.3389/fnins.2020.565976)
+        - Nunez-Elizalde AO, Gao JS, **Zhang T**, & Gallant JL (2018). *cottoncandy: scientific python package for easy cloud storage.* The Journal of Open Source Software. [doi:10.21105/joss.00890](https://doi.org/10.21105/joss.00890)
+        - Yu Y, **Zhang T**, Meadway A, Wang X, & Zhang Y (2015). *High-speed adaptive optics for imaging of the living human eye.* Optics Express. [doi:10.1364/OE.23.023035](https://doi.org/10.1364/OE.23.023035)
+        - **Zhang T**, Godara P, Blanco E, Griffin R, Wang X, Curcio CA, & Zhang Y (2015). *Variability in Human Cone Topography Assessed by Adaptive Optics Scanning Laser Ophthalmoscopy.* American Journal of Ophthalmology. [doi:10.1016/j.ajo.2015.04.034](https://doi.org/10.1016/j.ajo.2015.04.034)
+        - Ach T, Huisingh C, McGwin G Jr, Messinger JD, **Zhang T**, Bentley MJ, Gutierrez DB, Ablonczy Z, Smith RT, Sloan KR, & Curcio CA (2014). *Quantitative autofluorescence and cell density maps of the human retinal pigment epithelium.* Investigative Ophthalmology & Visual Science. [doi:10.1167/iovs.14-14802](https://doi.org/10.1167/iovs.14-14802)
     design:
       css_class: cv-block
       columns: '1'

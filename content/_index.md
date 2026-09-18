@@ -30,8 +30,21 @@ sections:
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
+        # Painted on the section itself, behind the gradient mesh
+        color:
+          light: '#0a0a0f'
+          dark: '#0a0a0f'
+        # Painted on .home-section-bg, above the gradient mesh
+        # At 50% width, 100% is exactly half the brain's width right of centre, and half its height is
+        # 21.63vw (50% width scaled by the 1510/1745 source aspect ratio, halved).
+        image:
+          filename: colorful-brain.png
+          size: 33%
+          position: center
+          parallax: false
         gradient_mesh:
           enable: true
+          intensity: medium
 
       # Name heading sizing to accommodate long or short names
       name:

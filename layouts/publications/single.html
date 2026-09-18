@@ -1,8 +1,37 @@
 {{ define "main" }}
-{{/* Publication page: title, date and authors, link buttons (PDF, preprint, DOI), abstract, then the
-     page body for descriptions and images. Overrides the theme's layouts/single.html for this type. */}}
+{{/* Publication page: featured image, title, date and authors, link buttons (PDF, preprint, DOI), abstract,
+     then the page body for descriptions and images. Overrides the theme's layouts/single.html for this type. */}}
 <article class="w-full break-words pb-8">
 	<main class="w-full min-w-0 px-6 pt-4 md:px-12">
+
+		{{/* Banner from the page bundle's `featured.*` resource, suppressed by `image.preview_only`.
+		     GIF and SVG skip Hugo's processing, which would drop animation frames and cannot rasterize vectors. */}}
+		{{ $featuredImage := partial "functions/get_featured_image.html" . }}
+		{{ $imageParameters := partial "functions/get_page_image_params.html" . }}
+		{{ if and $featuredImage (not $imageParameters.preview_only) }}
+		<figure class="mb-6">
+			{{ if and (reflect.IsImageResourceProcessable $featuredImage) (ne $featuredImage.MediaType.SubType "gif") }}
+			{{ $fittedImage := $featuredImage.Fit "1200x2500" }}
+			{{ $responsiveImage := partial "functions/process_responsive_image.html" (dict "image" $fittedImage "mode" "responsive" "sizes" (slice 480 768 1024 1200)) }}
+			<img class="featured-image mx-auto"
+				srcset="{{ $responsiveImage.srcset }}"
+				sizes="(max-width: 480px) 100vw, (max-width: 768px) 90vw, 1200px"
+				src="{{ $responsiveImage.fallback.RelPermalink }}"
+				width="{{ $fittedImage.Width }}"
+				height="{{ $fittedImage.Height }}"
+				data-pagefind-meta="image[src]"
+				alt="{{ with $imageParameters.alt_text }}{{ . }}{{ end }}"
+				fetchpriority="high">
+			{{ else }}
+			<img class="featured-image mx-auto"
+				src="{{ $featuredImage.RelPermalink }}"
+				data-pagefind-meta="image[src]"
+				alt="{{ with $imageParameters.alt_text }}{{ . }}{{ end }}"
+				fetchpriority="high">
+			{{ end }}
+			{{ with $imageParameters.caption }}<figcaption class="mt-2 text-center text-sm text-gray-500 dark:text-gray-300">{{ . | markdownify | emojify }}</figcaption>{{ end }}
+		</figure>
+		{{ end }}
 
 		<h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100" data-pagefind-meta="title" data-pagefind-body>{{ .Title }}</h1>
 

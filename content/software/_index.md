@@ -24,7 +24,7 @@ sections:
     content:
       title: Contributions
       text: |-
-        Oth.
+        Software that I contribute to but that are not my main projects.
 
         - [PyCortex](https://github.com/gallantlab/pycortex): Surface visualizations for neuroimaging data
         - [cottoncandy](https://github.com/gallantlab/cottoncandy): Native python interface for S3

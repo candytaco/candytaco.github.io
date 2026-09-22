@@ -33,7 +33,7 @@ abstract: >-
 summary: >-
   The first quantitative map of the cortical regions that are engaged as people actively navigate.
   Active navigation engages multiple regions across the visual, parietal, and prefrontal cortices.
-  Representations are distributed, and each region represents a complex mixture of navigation-related infromation.
+  Representations are distributed, and each region represents a complex mixture of navigation-related information.
 
 
 featured: true
@@ -42,7 +42,3 @@ links:
   - type: doi
     url: https://doi.org/10.64898/2025.12.16.694742
 ---
-
-  The first quantitative map of the cortical regions that are engages as people actively navigate.
-  Active navigation engages multiple regions across the visual, parietal, and prefrontal cortices.
-  Representations are distributed, and each region represents a complex mixture of navigation-related infromation.

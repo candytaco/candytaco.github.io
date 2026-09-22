@@ -27,7 +27,7 @@ license: CC-BY-NC-SA-4.0
 abstract: Attention is known to shift neural tuning toward attended targets within a single task, but real-world behavior requires switching between tasks with different demands, and how tuning shifts across such tasks was unknown. Here we used voxelwise encoding models to compare visual-semantic tuning across the human cerebral cortex between an active, naturalistic navigation task and a movie-watching task. Visual-semantic tuning differed substantially between the two tasks. Tuning shifted toward vehicles and traffic signs during navigation relative to movie-watching, and these shifts differed across functional networks. These results show that the brain reconfigures its visual-semantic tuning according to task relevance, and that object category representations during closed-loop behavior differ significantly from those measured in static experiments.
 
 # Summary. An optional shortened abstract.
-summary: Visual-semantic representations in the human cortex differs between tasks, demonstrating that the brain reconfigures its tuning accoring to task demands.
+summary: Visual-semantic representations in the human cortex differ between tasks, demonstrating that the brain dynamically reconfigures its tuning according to task demands.
   These results highlight the importance of ecologically valid experiments that engage the brain as does the real world.
 
 featured: true

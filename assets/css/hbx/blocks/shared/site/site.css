@@ -95,9 +95,10 @@
 		0 0 48px rgba(0, 0, 0, 0.9);
 }
 
-/* Hide the "Professional Summary" heading row (icon + h2) above the bio text.
+/* The bio heading row (icon + h2) above the bio text is shown, with its text set by
+   content.headings.about in content/_index.md. Only the circled icon beside it is dropped.
    Education and Interests use h3, so only the bio heading matches. */
-.resume-biography .mb-12 > .flex.items-center.gap-4.mb-8:has(h2) {
+.resume-biography .mb-12 > .flex.items-center.gap-4.mb-8:has(h2) > .flex-shrink-0 {
   display: none;
 }
 

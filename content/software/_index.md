@@ -8,7 +8,8 @@ sections:
   - block: collection
     content:
       title: Software
-      text: ""
+      text: |-
+        Open-source tools I have built, mostly to build infrastructure for naturalistic neuroimaging experiments: infrastructure for running interactive experiments, and methods for analyzing the data they produce.
       filters:
         folders:
           - software
@@ -23,7 +24,7 @@ sections:
     content:
       title: Contributions
       text: |-
-        Software that I contribute to but that are not my main projects.
+        Oth.
 
         - [PyCortex](https://github.com/gallantlab/pycortex): Surface visualizations for neuroimaging data
         - [cottoncandy](https://github.com/gallantlab/cottoncandy): Native python interface for S3

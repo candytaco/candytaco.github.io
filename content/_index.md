@@ -10,21 +10,23 @@ sections:
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
-      text: |-		
-        I use dynamic neuroimaging experiments and use advanced computational methods to understand the cognitive and neural basis of complex, naturalistic human behavior. 
+      text: |-
+        I study the cognitive and neural basis of complex, naturalistic human behavior.
+        My research program combines interactive neuroimaging experiments built in modern game engines with high-dimensional computational models of brain activity.
 
 
-        My research focuses on spatial navigation, collaborative problem solving, and dynamic multiagent interactions.
+        Real-world experience emerges from a continuous loop of perception, cognition, and action that static experimental paradigms cannot engage.
+        I built a naturalistic neuroimaging platform that immerses participants in dynamic virtual worlds that respond to their actions, and uses the game engine itself to extract tens of thousands of features for modeling.
 
 
-        Real-world experiences emerge out of a continuous perception-cognition-action loop that cannot be captured by classical experimental paradigms.
-        To enable ecologically valid experiments, I built a naturalistic neuroimaging paradigm that immerse participants in dynamic virtual worlds, and utilitizes the capabilities of modern game engines to extract features for analysis.
+        With this platform I have produced the first quantitative map of the cortical network that mediates active navigation.
+        Current work extends it to collaborative problem solving, interactions between humans and embodied AI agents, and the dynamics of brain activity that produce continuous behavior.
       # Show a call-to-action button under your biography? (optional)
       # button:
       #   text: Download CV
       #   url: uploads/resume.pdf
       headings:
-        about: ''
+        about: 'Human brain substrates of the perception-cognition-action loop'
         education: ''
         interests: ''
     design:
